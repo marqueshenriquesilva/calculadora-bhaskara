@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Calculadora Bhaskara</title>
+        <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap" rel="stylesheet"> 
+    </head>
+
+    <body>
+        <header>
+            <h1 class="title-header">Calculadora de Equação de Segundo Grau</h1>
+        </header>
+        <main>
+            <section class="main-section">
+                <p class="main-text">Esta calculadora resolve equações do 2º grau na forma <strong>A * X² + B * X + C = 0</strong>, sendo <strong>A não nulo</strong>.</p>
+                <form>
+                    <label for="valor-a">Insira valor de A:</label>
+                    <input type="text" id="valor-a">
+
+                    <label for="valor-b">Insira valor de B:</label>
+                    <input type="text" id="valor-b">
+
+                    <label for="valor-c">Insira valor de C:</label>
+                    <input type="text" id="valor-c">
+
+                    <button type="button" id="submit">Enviar valores</button>
+                </form>
+
+                <div class="resultados">
+                    <p class="resultado" id="valor-delta">Valor de delta</p>
+                    <p class="resultado" id="valor-raizes">Raízes da equação</p>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <h1 class="copyright">&copy; Marques Henrique</h1>
+        </footer>
+    </body>
+    
+    <script src="main.js"></script>
+</html>
